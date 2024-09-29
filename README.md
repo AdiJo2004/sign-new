@@ -1,1 +1,1 @@
-# slt-new-2024
+# fashion_object_detection_yolov8
