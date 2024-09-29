@@ -14,9 +14,8 @@ def app():
     </style>
     """, unsafe_allow_html=True)
 
-    st.markdown("<h1 style='text-align: center; color: #00698f;'>Fashion Objects Detection</h1>", unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align: center; color: #00698f;'>Powered by YOLOv8</h2>", unsafe_allow_html=True)
-
+    st.markdown("<h1 style='text-align: center; color: #00698f;'>Sign Language Detection</h1>", unsafe_allow_html=True)
+   
     model = YOLO('best.pt')
     object_names = list(model.names.values())
 
@@ -26,14 +25,6 @@ def app():
         st.write("Upload Image")
         uploaded_file = st.file_uploader("Select an image", type=['jpg', 'jpeg', 'png'])
 
-    with col2:
-        st.write("Detection Settings")
-        select_all = st.checkbox("Select All")
-        if select_all:
-            selected_objects = object_names
-        else:
-            selected_objects = st.multiselect('Choose objects to detect', object_names)
-        min_confidence = st.slider('Confidence score', 0.0, 1.0)
 
     submitted = st.button("Submit")
 
