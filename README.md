@@ -1,5 +1,5 @@
 # sign_language_detection_yolov8
-Link to the web app: https://signapp-kwrfymjeb84syaqgy9mqzc.streamlit.app/
+Link to the web app: [https://signapp-kwrfymjeb84syaqgy9mqzc.streamlit.app/](https://sign-new-3bzerunlpuwph3fdiszjgu.streamlit.app/)
 
 
 Precision: metrics/precision(B) = 0.8918
